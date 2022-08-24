@@ -4,11 +4,11 @@ Add following command in your server.cfg File
 
 ```ensure zykem-drugdealers```
 
-<h1>Config</h1>
-<img src="https://cdn.discordapp.com/attachments/931320917420826705/1012130397074767984/unknown.png">
-
 <h1>Preview</h1>
 <img src="https://cdn.discordapp.com/attachments/931320917420826705/1012129555043074138/unknown.png">
+
+<h1>Config</h1>
+<img src="https://cdn.discordapp.com/attachments/931320917420826705/1012130397074767984/unknown.png">
 
 <h1>Features</h1>
 <ul>
