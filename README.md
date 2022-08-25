@@ -26,4 +26,5 @@ Add following command in your server.cfg File
 <ul>
     <li>Making it more universal (only works for custom drugselling scripts)</li>
     <li>Finishing it completely (adding another panel for buying custom things like Drug sell Price boost, etc.</li>
+    <li>SECURITY UPDATE.</li>
 </ul>
