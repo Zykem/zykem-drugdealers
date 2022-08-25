@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.title {
+
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mainlogo:hover {
+
+  transition: all 0.5s;
+  text-shadow: 0 0 0.30em rgb(223, 80, 199);
+  
+}
+.title i {
+
+    font-size: 30px;
+    color: purple;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    
+
+}
+
+.title .logoname {
+
+    border-bottom:2px solid  purple;
+    
+
+}
+
+#container {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(17,16, 17);
+    box-shadow: purple 0px 5px, rgba(142, 19, 97, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(183, 12, 120, 0.1) 0px 20px, rgba(248, 18, 163, 0.05) 0px 25px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.swiper {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    opacity: 90%;
+    top: 20%;
+    text-align: center;
+
+  }
+
+  section .card .element {
+
+    height: 100px;
+    width: 140px;
+    padding: 5px;
+    margin: auto;
+
+  }
+
+
+  section .card .element i {
+
+    
+    object-fit: cover;
+    font-size: 80px;
+    color: purple;
+    text-align: center;
+    text-shadow: 0 0 0.15em purple;
+    transition: all 0.3s;
+
+  }
+
+  section .card .element i:hover {
+
+    
+    color: rgb(237, 90, 212);
+    text-shadow: 0 0 0.30em rgb(167, 57, 148);
+
+  }
+
+  .card {
+
+    display: flex;
+    border-radius: 20px;
+    width: 10px;
+    margin-left: 5%;
+    margin-top: -2%;
+    
+
+  }
+
+  .card .card-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+  }
+
+  .rating {
+
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    text-shadow: 0 0 0.15em purple;
+    text-align: center;
+    
+
+  }
+
+
+
+   .rating i {
+
+    font-size: 22px;
+    margin: 0 2px;
+    color: purple;
+    text-align: center;
+    align-items: center;
+    transition: all 0.3s;
+
+  }
+
+  .rating i:hover {
+
+    color: rgb(237, 90, 212);
+    text-shadow: 0 0 0.30em rgb(167, 57, 148);
+
+  }
+
+  .card .buttons {
+
+    width: 100%;
+    display:flex;
+    margin-top: 4px;
+
+  }
+
+  .card .buttons button {
+
+    background: transparent;
+    outline: none;
+    border: 2px solid purple;
+    color: white;
+    font-weight: 549;
+    margin: 5px;
+    box-shadow: 0px 2px 7px rgba(145, 92, 182, .2);
+    padding: 8px 23px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+
+  }
+
+  .buttons {
+
+    width: 100%;
+    display: inline-flex;
+    margin-top: 4px;
+    align-items: center;
+
+  }
+
+  .buttons button {
+
+    background: transparent;
+    outline: none;
+    border: 2px solid purple;
+    color: white;
+    font-weight: 549;
+    margin: 5px;
+    box-shadow: 0px 2px 7px rgba(145, 92, 182, .2);
+    padding: 8px 23px;
+    border-radius: 132px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+
+  }
+
+  .buttons button:hover {
+
+    background: rgb(25, 25, 25);
+    text-shadow: 0 0 0.30em rgb(167, 57, 148);
+
+  }
+
+
+
+  #toast {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    border-left: 3px solid purple;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 50px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#toast #img{
+  width: 50px;
+  height: 50px;
+    
+    float: left;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    box-sizing: border-box;
+
+    
+    background-color: #111;
+    color: #fff;
+}
+#toast #desc{
+
+    
+    color: #fff;
+   
+    padding: 16px;
+    
+    overflow: hidden;
+  white-space: nowrap;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.1s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.1s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px} 
+    to {min-width: 350px}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes stay {
+    from {min-width: 350px} 
+    to {min-width: 350px}
+}
+
+@keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 60px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+}
