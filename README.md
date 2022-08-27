@@ -1,3 +1,5 @@
+<h1>ATTENTION</h1>
+This project is not finished! Im still working on it.
 
 <h1>Usage</h1>
 Add following command in your server.cfg File
